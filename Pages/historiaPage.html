@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestra Historia | Grupo Simioni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: '#75ae5b', dark: '#001a23', 'footer-mid': '#476855' },
+          fontFamily: { poppins: ['Poppins','sans-serif'], montserrat: ['Montserrat','sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Montserrat', sans-serif; color: #001a23; }
+    h1,h2,h3,h4,nav { font-family: 'Poppins', sans-serif; }
+    .titlebar-bg {
+      background-image: linear-gradient(rgba(0,26,35,0.80), rgba(0,26,35,0.80)),
+        url('https://placehold.co/1920x400/001a23/334455?text=.');
+      background-size: cover; background-position: center;
+    }
+    .nav-link:hover { color: #75ae5b; }
+    .dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu { display: none; }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- TOPBAR -->
+  <div class="bg-dark text-white text-xs py-2">
+    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4">
+        <strong class="text-brand tracking-wide">URGENCIAS 24HS</strong>
+        <span class="text-gray-400">|</span>
+        <span class="text-gray-300">(0341) 000-0000</span>
+      </div>
+      <div class="flex items-center gap-4 text-gray-300">
+        <span>info@simioni.com</span>
+        <span class="text-gray-500">|</span>
+        <a href="#" class="hover:text-brand transition">Facebook</a>
+        <a href="#" class="hover:text-brand transition">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
+      <a href="../" class="text-3xl font-bold text-dark tracking-wider font-poppins">SIMIONI<span class="text-brand">.</span></a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider text-dark">
+        <li><a href="../" class="nav-link transition-colors">Inicio</a></li>
+        <li><a href="../historia/" class="nav-link text-brand border-b-2 border-brand pb-0.5">Historia</a></li>
+        <li class="dropdown relative">
+          <a href="../servicios/" class="nav-link transition-colors flex items-center gap-1">Servicios
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <ul class="dropdown-menu absolute top-full left-0 bg-white shadow-lg py-2 min-w-44 z-50 border-t-2 border-brand">
+            <li><a href="../servicios/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Todos los servicios</a></li>
+            <li><a href="../ambulancias/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ambulancias</a></li>
+            <li><a href="../ortopedia/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ortopedia</a></li>
+            <li><a href="../crematorio/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Crematorio</a></li>
+          </ul>
+        </li>
+        <li><a href="../planes/" class="nav-link transition-colors">Planes</a></li>
+        <li><a href="../contacto/" class="nav-link transition-colors">Contacto</a></li>
+        <li><a href="../contacto/" class="bg-brand text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-dark transition-colors">Consultar</a></li>
+      </ul>
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 text-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4">
+      <ul class="flex flex-col gap-4 text-sm font-semibold uppercase tracking-wider">
+        <li><a href="../" class="text-dark hover:text-brand">Inicio</a></li>
+        <li><a href="../historia/" class="text-brand">Historia</a></li>
+        <li><a href="../servicios/" class="text-dark hover:text-brand">Servicios</a></li>
+        <li><a href="../planes/" class="text-dark hover:text-brand">Planes</a></li>
+        <li><a href="../contacto/" class="text-dark hover:text-brand">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TITLEBAR -->
+  <div class="titlebar-bg py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h1 class="text-4xl font-bold text-white mb-3">Nuestra Historia</h1>
+      <p class="text-sm text-gray-400">
+        <a href="../" class="hover:text-brand transition-colors">Inicio</a>
+        <span class="mx-2 text-gray-600">/</span>
+        <span class="text-brand">Historia</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- HISTORIA PRINCIPAL -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+        <div>
+          <img src="https://placehold.co/800x560/efefef/001a23?text=Historia+Simioni" alt="Historia" class="w-full rounded shadow-md">
+        </div>
+        <div>
+          <p class="text-brand text-xs font-bold uppercase tracking-widest mb-2">Desde 1900</p>
+          <h2 class="text-3xl font-bold text-dark mb-5">Más de 120 años de trayectoria</h2>
+          <div class="w-12 h-1 bg-brand mb-7"></div>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            Desde principios de 1900, Grupo Simioni es sinónimo de seriedad, seguridad y confianza. Nuestros fundadores creyeron en la importancia de acompañar a las familias en los momentos más difíciles con dignidad y respeto.
+          </p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            A lo largo de más de un siglo, hemos crecido junto a nuestra comunidad. Lo que comenzó como una pequeña empresa familiar se convirtió en una de las instituciones fúnebres más reconocidas de la región.
+          </p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-8">
+            Hoy contamos con múltiples sedes, una flota de vehículos modernos, salas de velatorio equipadas y un equipo de profesionales capacitados para brindar el mejor servicio en cada situación.
+          </p>
+          <div class="grid grid-cols-3 gap-6">
+            <div class="text-center border-r border-gray-200">
+              <p class="text-3xl font-bold text-brand">120+</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Años de historia</p>
+            </div>
+            <div class="text-center border-r border-gray-200">
+              <p class="text-3xl font-bold text-brand">3</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Sedes</p>
+            </div>
+            <div class="text-center">
+              <p class="text-3xl font-bold text-brand">24hs</p>
+              <p class="text-xs text-gray-500 uppercase tracking-wider mt-1">Disponibles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LÍNEA DE TIEMPO -->
+  <section class="py-20 bg-[#efefef]">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand text-xs font-bold uppercase tracking-widest mb-2">Nuestra evolución</p>
+        <h2 class="text-3xl font-bold text-dark">Hitos de nuestra historia</h2>
+        <div class="w-16 h-1 bg-brand mx-auto mt-4"></div>
+      </div>
+
+      <div class="relative border-l-2 border-brand pl-10 space-y-12">
+
+        <div class="relative">
+          <div class="absolute -left-11 w-5 h-5 bg-brand rounded-full border-4 border-white shadow"></div>
+          <span class="text-brand text-xs font-bold uppercase tracking-widest">1900</span>
+          <h3 class="text-lg font-bold text-dark mt-1 mb-2">Fundación</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">La familia Simioni funda la empresa con el objetivo de brindar un servicio fúnebre digno y accesible a toda la comunidad regional.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-11 w-5 h-5 bg-brand rounded-full border-4 border-white shadow"></div>
+          <span class="text-brand text-xs font-bold uppercase tracking-widest">1950</span>
+          <h3 class="text-lg font-bold text-dark mt-1 mb-2">Expansión regional</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Apertura de nuevas sucursales en localidades vecinas, consolidando la presencia de la empresa en toda la región centro de la provincia.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-11 w-5 h-5 bg-brand rounded-full border-4 border-white shadow"></div>
+          <span class="text-brand text-xs font-bold uppercase tracking-widest">1985</span>
+          <h3 class="text-lg font-bold text-dark mt-1 mb-2">Incorporación de nuevos servicios</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Sumamos el servicio de ambulancias y ortopedia, ampliando nuestra propuesta de valor hacia el bienestar integral de las familias.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-11 w-5 h-5 bg-brand rounded-full border-4 border-white shadow"></div>
+          <span class="text-brand text-xs font-bold uppercase tracking-widest">2000</span>
+          <h3 class="text-lg font-bold text-dark mt-1 mb-2">Modernización</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Incorporamos tecnología de punta y renovamos completamente nuestras instalaciones para brindar un servicio de excelencia en el nuevo milenio.</p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-11 w-5 h-5 bg-brand rounded-full border-4 border-white shadow"></div>
+          <span class="text-brand text-xs font-bold uppercase tracking-widest">Hoy</span>
+          <h3 class="text-lg font-bold text-dark mt-1 mb-2">Grupo Simioni</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">Seguimos creciendo con la misma esencia de siempre: acompañar a las familias con calidez, profesionalismo y respeto en cada momento.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="text-brand text-xs font-bold uppercase tracking-widest mb-2">Lo que nos define</p>
+        <h2 class="text-3xl font-bold text-dark">Nuestros valores</h2>
+        <div class="w-16 h-1 bg-brand mx-auto mt-4"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-8 border border-gray-100 rounded hover:border-brand hover:shadow-md transition-all duration-300">
+          <div class="w-16 h-16 bg-brand bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-5">
+            <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-dark mb-3">Respeto</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Tratamos cada situación con la sensibilidad y el respeto que merece cada familia que nos confía su acompañamiento.</p>
+        </div>
+        <div class="text-center p-8 border border-gray-100 rounded hover:border-brand hover:shadow-md transition-all duration-300">
+          <div class="w-16 h-16 bg-brand bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-5">
+            <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-dark mb-3">Confianza</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Más de 120 años avalan nuestra trayectoria. Las familias nos eligen porque saben que cumplimos con nuestra palabra.</p>
+        </div>
+        <div class="text-center p-8 border border-gray-100 rounded hover:border-brand hover:shadow-md transition-all duration-300">
+          <div class="w-16 h-16 bg-brand bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-5">
+            <svg class="w-7 h-7 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-dark mb-3">Compromiso</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Nuestro equipo está disponible las 24 horas, comprometido a brindar el mejor servicio sin importar el momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="bg-[#efefef] py-14">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-1">
+          <p class="text-2xl font-bold text-dark font-poppins mb-4">SIMIONI<span class="text-brand">.</span></p>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4">Más de 120 años acompañando a las familias de la región con seriedad, respeto y calidez humana.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-widest text-dark mb-5">Servicios</h4>
+          <ul class="space-y-2.5 text-sm text-gray-600">
+            <li><a href="../servicios/" class="hover:text-brand transition-colors">Sepelios</a></li>
+            <li><a href="../servicios/" class="hover:text-brand transition-colors">Velatorios</a></li>
+            <li><a href="../ambulancias/" class="hover:text-brand transition-colors">Ambulancias</a></li>
+            <li><a href="../ortopedia/" class="hover:text-brand transition-colors">Ortopedia</a></li>
+            <li><a href="../crematorio/" class="hover:text-brand transition-colors">Crematorio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-widest text-dark mb-5">Información</h4>
+          <ul class="space-y-2.5 text-sm text-gray-600">
+            <li><a href="../historia/" class="hover:text-brand transition-colors">Nuestra Historia</a></li>
+            <li><a href="../planes/" class="hover:text-brand transition-colors">Planes</a></li>
+            <li><a href="../contacto/" class="hover:text-brand transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-widest text-dark mb-5">Contacto</h4>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li><span class="font-semibold text-dark block">San José de la Esquina</span>Av. Principal 100</li>
+            <li><span class="font-semibold text-dark block">Cruz Alta</span>Calle Central 200</li>
+            <li><a href="mailto:info@simioni.com" class="text-brand hover:underline">info@simioni.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-footer-mid py-5">
+      <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-4 text-white text-xs">
+        <div class="flex flex-wrap gap-6">
+          <a href="../" class="hover:text-brand transition-colors uppercase tracking-wider">Inicio</a>
+          <a href="../historia/" class="hover:text-brand transition-colors uppercase tracking-wider">Historia</a>
+          <a href="../servicios/" class="hover:text-brand transition-colors uppercase tracking-wider">Servicios</a>
+          <a href="../planes/" class="hover:text-brand transition-colors uppercase tracking-wider">Planes</a>
+          <a href="../contacto/" class="hover:text-brand transition-colors uppercase tracking-wider">Contacto</a>
+        </div>
+        <div class="text-gray-300">URGENCIAS 24HS — (0341) 000-0000</div>
+      </div>
+    </div>
+    <div class="bg-dark py-4">
+      <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-2 text-gray-500 text-xs">
+        <span>&copy; 2024 Grupo Simioni. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
