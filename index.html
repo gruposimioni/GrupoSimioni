@@ -17,9 +17,9 @@
       theme: {
         extend: {
           colors: {
-            brand: '#0070C0',       /* Verde institucional */
-            dark: '#001a23',        /* Azul oscuro / negro */
-            'footer-mid': '#476855' /* Verde oscuro del footer medio */
+            brand: '#302D7F',       /* Índigo institucional */
+            dark: '#1B1E1E',        /* Azul oscuro / negro */
+            'footer-mid': '#D3C3C5' /* Verde oscuro del footer medio */
           },
           fontFamily: {
             poppins: ['Poppins', 'sans-serif'],
@@ -32,7 +32,7 @@
 
   <style>
     /* Fuente base del body */
-    body { font-family: 'Montserrat', sans-serif; color: #001a23; }
+    body { font-family: 'Montserrat', sans-serif; color: #1B1E1E; }
 
     /* Fuente para títulos y navegación */
     h1, h2, h3, h4, nav { font-family: 'Poppins', sans-serif; }
@@ -40,15 +40,15 @@
     /* IMAGEN DE FONDO DEL HERO
        Cambiar la URL dentro de url('...') por la foto real del hero */
     .hero-bg {
-      background-image: linear-gradient(rgba(0,26,35,0.72), rgba(0,26,35,0.72)),
-        url('https://placehold.co/1920x700/001a23/334455?text=.');
+      background-image: linear-gradient(rgba(27,30,30,0.72), rgba(27,30,30,0.72)),
+        url('https://placehold.co/1920x700/1B1E1E/302D7F?text=.');
       background-size: cover;
       background-position: center;
     }
 
     /* Efecto hover en links del nav */
     .nav-link { transition: color 0.2s; }
-    .nav-link:hover { color: #75ae5b; }
+    .nav-link:hover { color: #9B8AC0; }
 
     /* Dropdown del menú Servicios */
     .dropdown:hover .dropdown-menu { display: block; }
@@ -97,7 +97,7 @@
 
       <!-- LOGO: Nombre de la empresa -->
       <a href="index.html">
-        <img src="logo-removebg-preview.png " alt="Logo SIMIONI" class="h-12">
+        <img src="logoSinFondo.png" alt="Logo SIMIONI" class="h-11" height="20">
       </a>
 
       <!-- MENÚ DESKTOP -->
@@ -120,7 +120,7 @@
             <li><a href="Pages/ambulanciasPage.html"     class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ambulancias</a></li>
             <li><a href="Pages/ortopediaPage.html"       class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ortopedia</a></li>
             <li><a href="Pages/crematorioPage.html"      class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Crematorio</a></li>
-            <li><a href="Pages/arte-funerarioPage.html"  class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Arte Funerario</a></li>
+            <li><a href="Pages/arteFunerarioPage.html"  class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Arte Funerario</a></li>
             <li><a href="Pages/audiologiaPage.html"      class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Audiología</a></li>
           </ul>
         </li>
@@ -147,13 +147,13 @@
     <!-- MENÚ MOBILE: se muestra/oculta con el botón hamburguesa -->
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4">
       <ul class="flex flex-col gap-4 text-sm font-semibold uppercase tracking-wider">
-        <li><a href="Pages/indexPage.html"       class="text-brand">Inicio</a></li>
+        <li><a href="index.html"       class="text-brand">Inicio</a></li>
         <li><a href="Pages/historiaPage.html"        class="text-dark hover:text-brand">Historia</a></li>
         <li><a href="Pages/serviciosPage.html"       class="text-dark hover:text-brand">Servicios</a></li>
         <li><a href="Pages/ambulanciasPage.html"     class="text-dark hover:text-brand pl-4">— Ambulancias</a></li>
         <li><a href="Pages/ortopediaPage.html"       class="text-dark hover:text-brand pl-4">— Ortopedia</a></li>
         <li><a href="Pages/crematorioPage.html"      class="text-dark hover:text-brand pl-4">— Crematorio</a></li>
-        <li><a href="Pages/arte-funerarioPage.html"  class="text-dark hover:text-brand pl-4">— Arte Funerario</a></li>
+        <li><a href="Pages/arteFunerarioPage.html"  class="text-dark hover:text-brand pl-4">— Arte Funerario</a></li>
         <li><a href="Pages/audiologiaPage.html"      class="text-dark hover:text-brand pl-4">— Audiología</a></li>
         <li><a href="Pages/planesPage.html"          class="text-dark hover:text-brand">Planes</a></li>
         <li><a href="Pages/contactoPage.html"        class="text-dark hover:text-brand">Contacto</a></li>
@@ -228,7 +228,7 @@
         <a href="Pages/serviciosPage.html" class="group block bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
           <div class="overflow-hidden">
             <!-- IMAGEN: foto representativa de sepelios / vehículos fúnebres -->
-            <img src="https://placehold.co/600x380/efefef/001a23?text=Fallecimientos"
+            <img src="https://placehold.co/600x380/efefef/302D7F?text=Fallecimientos"
                  alt="Fallecimientos" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-6 text-center">
@@ -246,7 +246,7 @@
         <a href="Pages/crematorioPage.html" class="group block bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
           <div class="overflow-hidden">
             <!-- IMAGEN: foto del crematorio o urnas -->
-            <img src="https://placehold.co/600x380/efefef/001a23?text=Cremaciones"
+            <img src="https://placehold.co/600x380/efefef/302D7F?text=Cremaciones"
                  alt="Cremaciones" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-6 text-center">
@@ -262,7 +262,7 @@
         <a href="Pages/planesPage.html" class="group block bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
           <div class="overflow-hidden">
             <!-- IMAGEN: foto representativa de planes / familia -->
-            <img src="https://placehold.co/600x380/efefef/001a23?text=Planes"
+            <img src="https://placehold.co/600x380/efefef/302D7F?text=Planes"
                  alt="Planes" class="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-6 text-center">
@@ -290,7 +290,7 @@
 
         <!-- IMAGEN: foto histórica de la empresa (reemplazar src) -->
         <div class="overflow-hidden rounded shadow-md">
-          <img src="https://placehold.co/800x520/d4ddd0/001a23?text=Historia+Simioni"
+          <img src="https://placehold.co/800x520/d4ddd0/302D7F?text=Historia+Simioni"
                alt="Nuestra Historia" class="w-full h-full object-cover">
         </div>
 
@@ -341,7 +341,7 @@
         <a href="Pages/serviciosPage.html" class="group block overflow-hidden rounded shadow-sm hover:shadow-lg transition-all duration-300">
           <div class="relative overflow-hidden">
             <!-- IMAGEN: foto de autos fúnebres o furgones -->
-            <img src="https://placehold.co/600x400/efefef/001a23?text=Sepelios"
+            <img src="https://placehold.co/600x400/efefef/302D7F?text=Sepelios"
                  alt="Sepelios" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
               <div class="p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
@@ -361,7 +361,7 @@
         <a href="Pages/serviciosPage.html" class="group block overflow-hidden rounded shadow-sm hover:shadow-lg transition-all duration-300">
           <div class="relative overflow-hidden">
             <!-- IMAGEN: foto de salas de velatorio -->
-            <img src="https://placehold.co/600x400/efefef/001a23?text=Velatorios"
+            <img src="https://placehold.co/600x400/efefef/302D7F?text=Velatorios"
                  alt="Velatorios" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
               <div class="p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
@@ -379,7 +379,7 @@
         <a href="Pages/serviciosPage.html" class="group block overflow-hidden rounded shadow-sm hover:shadow-lg transition-all duration-300">
           <div class="relative overflow-hidden">
             <!-- IMAGEN: foto de furgones con mapa de Argentina de fondo -->
-            <img src="https://placehold.co/600x400/efefef/001a23?text=Traslados"
+            <img src="https://placehold.co/600x400/efefef/302D7F?text=Traslados"
                  alt="Traslados" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
             <div class="absolute inset-0 bg-dark bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
               <div class="p-5 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
@@ -535,7 +535,7 @@
             <li><a href="Pages/ambulanciasPage.html"    class="hover:text-brand transition-colors">Ambulancias</a></li>
             <li><a href="Pages/ortopediaPage.html"      class="hover:text-brand transition-colors">Ortopedia</a></li>
             <li><a href="Pages/crematorioPage.html"     class="hover:text-brand transition-colors">Crematorio</a></li>
-            <li><a href="Pages/arte-funerarioPage.html" class="hover:text-brand transition-colors">Arte Funerario</a></li>
+            <li><a href="Pages/arteFunerarioPage.html" class="hover:text-brand transition-colors">Arte Funerario</a></li>
             <li><a href="Pages/audiologiaPage.html"     class="hover:text-brand transition-colors">Audiología</a></li>
           </ul>
         </div>
@@ -576,7 +576,7 @@
       <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-4 text-white text-xs">
         <!-- LINKS: navegación rápida en footer -->
         <div class="flex flex-wrap gap-6">
-          <a href="Pages/indexPage.html"   class="hover:text-brand transition-colors uppercase tracking-wider">Inicio</a>
+          <a href="index.html"   class="hover:text-brand transition-colors uppercase tracking-wider">Inicio</a>
           <a href="Pages/historiaPage.html"    class="hover:text-brand transition-colors uppercase tracking-wider">Historia</a>
           <a href="Pages/serviciosPage.html"   class="hover:text-brand transition-colors uppercase tracking-wider">Servicios</a>
           <a href="Pages/planesPage.html"      class="hover:text-brand transition-colors uppercase tracking-wider">Planes</a>

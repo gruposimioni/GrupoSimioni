@@ -6,31 +6,31 @@
   <title>Contacto | Grupo Simioni</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="js/contacto.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script defer src="../js/contacto.js"></script>
 
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: { brand: '#75ae5b', dark: '#001a23', 'footer-mid': '#476855' },
+          colors: { brand: '#302D7F', dark: '#1B1E1E', 'footer-mid': '#8A737E' },
           fontFamily: { poppins: ['Poppins','sans-serif'], montserrat: ['Montserrat','sans-serif'] }
         }
       }
     }
   </script>
   <style>
-    body { font-family: 'Montserrat', sans-serif; color: #001a23; }
+    body { font-family: 'Montserrat', sans-serif; color: #1B1E1E; }
     h1,h2,h3,h4,nav { font-family: 'Poppins', sans-serif; }
     .titlebar-bg {
-      background-image: linear-gradient(rgba(0,26,35,0.80), rgba(0,26,35,0.80)),
-        url('https://placehold.co/1920x400/001a23/334455?text=.');
+      background-image: linear-gradient(rgba(27,30,30,0.80), rgba(27,30,30,0.80)),
+        url('https://placehold.co/1920x400/1B1E1E/302D7F?text=.');
       background-size: cover; background-position: center;
     }
-    .nav-link:hover { color: #75ae5b; }
+    .nav-link:hover { color: #9B8AC0; }
     .dropdown:hover .dropdown-menu { display: block; }
     .dropdown-menu { display: none; }
-    input:focus, textarea:focus, select:focus { outline: none; border-color: #75ae5b; }
+    input:focus, textarea:focus, select:focus { outline: none; border-color: #9B8AC0; }
   </style>
 </head>
 <body class="bg-white">
@@ -55,24 +55,24 @@
   <!-- NAV -->
   <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 flex justify-between items-center py-4">
-      <a href="../" class="text-3xl font-bold text-dark tracking-wider font-poppins">SIMIONI<span class="text-brand">.</span></a>
+      <a href="../index.html" class="text-3xl font-bold text-dark tracking-wider font-poppins">SIMIONI<span class="text-brand">.</span></a>
       <ul class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider text-dark">
-        <li><a href="../" class="nav-link transition-colors">Inicio</a></li>
-        <li><a href="../historia/" class="nav-link transition-colors">Historia</a></li>
+        <li><a href="../index.html" class="nav-link transition-colors">Inicio</a></li>
+        <li><a href="historiaPage.html" class="nav-link transition-colors">Historia</a></li>
         <li class="dropdown relative">
-          <a href="../servicios/" class="nav-link transition-colors flex items-center gap-1">Servicios
+          <a href="serviciosPage.html" class="nav-link transition-colors flex items-center gap-1">Servicios
             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </a>
           <ul class="dropdown-menu absolute top-full left-0 bg-white shadow-lg py-2 min-w-44 z-50 border-t-2 border-brand">
-            <li><a href="../servicios/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Todos los servicios</a></li>
-            <li><a href="../ambulancias/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ambulancias</a></li>
-            <li><a href="../ortopedia/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ortopedia</a></li>
-            <li><a href="../crematorio/" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Crematorio</a></li>
+            <li><a href="serviciosPage.html" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Todos los servicios</a></li>
+            <li><a href="ambulanciasPage.html" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ambulancias</a></li>
+            <li><a href="ortopediaPage.html" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Ortopedia</a></li>
+            <li><a href="crematorioPage.html" class="block px-5 py-2 text-xs text-dark hover:text-brand hover:bg-gray-50 transition">Crematorio</a></li>
           </ul>
         </li>
-        <li><a href="../planes/" class="nav-link transition-colors">Planes</a></li>
-        <li><a href="../contacto/" class="nav-link text-brand border-b-2 border-brand pb-0.5">Contacto</a></li>
-        <li><a href="../contacto/" class="bg-brand text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-dark transition-colors">Consultar</a></li>
+        <li><a href="planesPage.html" class="nav-link transition-colors">Planes</a></li>
+        <li><a href="contactoPage.html" class="nav-link text-brand border-b-2 border-brand pb-0.5">Contacto</a></li>
+        <li><a href="contactoPage.html" class="bg-brand text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-dark transition-colors">Consultar</a></li>
       </ul>
       <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 text-dark">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -80,11 +80,11 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4">
       <ul class="flex flex-col gap-4 text-sm font-semibold uppercase tracking-wider">
-        <li><a href="../" class="text-dark hover:text-brand">Inicio</a></li>
-        <li><a href="../historia/" class="text-dark hover:text-brand">Historia</a></li>
-        <li><a href="../servicios/" class="text-dark hover:text-brand">Servicios</a></li>
-        <li><a href="../planes/" class="text-dark hover:text-brand">Planes</a></li>
-        <li><a href="../contacto/" class="text-brand">Contacto</a></li>
+        <li><a href="../index.html" class="text-dark hover:text-brand">Inicio</a></li>
+        <li><a href="historiaPage.html" class="text-dark hover:text-brand">Historia</a></li>
+        <li><a href="serviciosPage.html" class="text-dark hover:text-brand">Servicios</a></li>
+        <li><a href="planesPage.html" class="text-dark hover:text-brand">Planes</a></li>
+        <li><a href="contactoPage.html" class="text-brand">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -94,7 +94,7 @@
     <div class="max-w-6xl mx-auto px-6">
       <h1 class="text-4xl font-bold text-white mb-3">Contacto</h1>
       <p class="text-sm text-gray-400">
-        <a href="../" class="hover:text-brand transition-colors">Inicio</a>
+        <a href="../index.html" class="hover:text-brand transition-colors">Inicio</a>
         <span class="mx-2 text-gray-600">/</span>
         <span class="text-brand">Contacto</span>
       </p>
@@ -252,28 +252,28 @@
 
         <!-- Formulario -->
         <div class="bg-white p-8 rounded shadow-sm">
-          <form>
+          <form id="contactForm">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
               <div>
                 <label class="block text-xs font-semibold text-dark uppercase tracking-wider mb-2">Nombre</label>
-                <input type="text" placeholder="Su nombre" id="from_name" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
+                <input type="text" placeholder="Su nombre" id="from_name" name="from_name" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
               </div>
               <div>
                 <label class="block text-xs font-semibold text-dark uppercase tracking-wider mb-2">Apellido</label>
-                <input type="text" placeholder="Su apellido" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
+                <input type="text" placeholder="Su apellido" id="from_last_name" name="from_last_name" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
               </div>
             </div>
             <div class="mb-5">
               <label class="block text-xs font-semibold text-dark uppercase tracking-wider mb-2">Email</label>
-              <input type="email" placeholder="su@email.com"  id="email_id" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
+              <input type="email" placeholder="su@email.com" id="from_email" name="from_email" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
             </div>
             <div class="mb-5">
               <label class="block text-xs font-semibold text-dark uppercase tracking-wider mb-2">Teléfono</label>
-              <input type="tel" placeholder="(000) 000-0000" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
+              <input type="tel" placeholder="(000) 000-0000" id="phone" name="phone" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors">
             </div>
             <div class="mb-5">
               <label class="block text-xs font-semibold text-dark uppercase tracking-wider mb-2">Asunto</label>
-              <select class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 transition-colors">
+              <select id="subject" name="subject" class="w-full border border-gray-300 rounded px-4 py-3 text-sm text-gray-600 transition-colors">
                 <option value="">Seleccione un asunto</option>
                 <option>Información sobre servicios</option>
                 <option>Consulta sobre planes</option>
@@ -285,9 +285,13 @@
             </div>
             <div class="mb-6">
               <label class="block text-xs font-semibold text-dark uppercase tracking-wider mb-2">Mensaje</label>
-              <textarea rows="4" placeholder="Escriba su mensaje aquí..." class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors resize-none"></textarea>
+              <textarea rows="4" placeholder="Escriba su mensaje aquí..." id="message" name="message" class="w-full border border-gray-300 rounded px-4 py-3 text-sm transition-colors resize-none"></textarea>
             </div>
-            <button type="submit" class="w-full bg-brand text-white py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-dark transition-colors">
+            <div id="error-mensaje" class="hidden mb-4 text-sm text-red-600 bg-red-50 border border-red-200 rounded px-4 py-3"></div>
+            <div id="success-mensaje" class="hidden mb-4 text-sm text-green-700 bg-green-50 border border-green-200 rounded px-4 py-3">
+              Mensaje enviado correctamente. Nos comunicaremos pronto.
+            </div>
+            <button type="submit" id="submitBtn" class="w-full bg-brand text-white py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-dark transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
               Enviar mensaje
             </button>
           </form>
@@ -308,19 +312,19 @@
         <div>
           <h4 class="text-sm font-bold uppercase tracking-widest text-dark mb-5">Servicios</h4>
           <ul class="space-y-2.5 text-sm text-gray-600">
-            <li><a href="../servicios/" class="hover:text-brand transition-colors">Sepelios</a></li>
-            <li><a href="../servicios/" class="hover:text-brand transition-colors">Velatorios</a></li>
-            <li><a href="../ambulancias/" class="hover:text-brand transition-colors">Ambulancias</a></li>
-            <li><a href="../ortopedia/" class="hover:text-brand transition-colors">Ortopedia</a></li>
-            <li><a href="../crematorio/" class="hover:text-brand transition-colors">Crematorio</a></li>
+            <li><a href="serviciosPage.html" class="hover:text-brand transition-colors">Sepelios</a></li>
+            <li><a href="serviciosPage.html" class="hover:text-brand transition-colors">Velatorios</a></li>
+            <li><a href="ambulanciasPage.html" class="hover:text-brand transition-colors">Ambulancias</a></li>
+            <li><a href="ortopediaPage.html" class="hover:text-brand transition-colors">Ortopedia</a></li>
+            <li><a href="crematorioPage.html" class="hover:text-brand transition-colors">Crematorio</a></li>
           </ul>
         </div>
         <div>
           <h4 class="text-sm font-bold uppercase tracking-widest text-dark mb-5">Información</h4>
           <ul class="space-y-2.5 text-sm text-gray-600">
-            <li><a href="../historia/" class="hover:text-brand transition-colors">Nuestra Historia</a></li>
-            <li><a href="../planes/" class="hover:text-brand transition-colors">Planes</a></li>
-            <li><a href="../contacto/" class="hover:text-brand transition-colors">Contacto</a></li>
+            <li><a href="historiaPage.html" class="hover:text-brand transition-colors">Nuestra Historia</a></li>
+            <li><a href="planesPage.html" class="hover:text-brand transition-colors">Planes</a></li>
+            <li><a href="contactoPage.html" class="hover:text-brand transition-colors">Contacto</a></li>
           </ul>
         </div>
         <div>
@@ -336,11 +340,11 @@
     <div class="bg-footer-mid py-5">
       <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-between items-center gap-4 text-white text-xs">
         <div class="flex flex-wrap gap-6">
-          <a href="../" class="hover:text-brand transition-colors uppercase tracking-wider">Inicio</a>
-          <a href="../historia/" class="hover:text-brand transition-colors uppercase tracking-wider">Historia</a>
-          <a href="../servicios/" class="hover:text-brand transition-colors uppercase tracking-wider">Servicios</a>
-          <a href="../planes/" class="hover:text-brand transition-colors uppercase tracking-wider">Planes</a>
-          <a href="../contacto/" class="hover:text-brand transition-colors uppercase tracking-wider">Contacto</a>
+          <a href="../index.html" class="hover:text-brand transition-colors uppercase tracking-wider">Inicio</a>
+          <a href="historiaPage.html" class="hover:text-brand transition-colors uppercase tracking-wider">Historia</a>
+          <a href="serviciosPage.html" class="hover:text-brand transition-colors uppercase tracking-wider">Servicios</a>
+          <a href="planesPage.html" class="hover:text-brand transition-colors uppercase tracking-wider">Planes</a>
+          <a href="contactoPage.html" class="hover:text-brand transition-colors uppercase tracking-wider">Contacto</a>
         </div>
         <div class="text-gray-300">URGENCIAS 24HS — (0341) 000-0000</div>
       </div>
