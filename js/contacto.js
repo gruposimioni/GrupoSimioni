@@ -15,15 +15,15 @@
 // ================================================================
 
 // Public Key de tu cuenta EmailJS (Account → General)
-emailjs.init({ publicKey: "TU_PUBLIC_KEY" });
+emailjs.init({ publicKey: "RvKWtWO09igGdrB8Y" });
 
 // ID del servicio de email conectado (Email Services)
-const SERVICE_ID  = "TU_SERVICE_ID";
+const SERVICE_ID  = "service_c1hrhoj";
 
 // ID de la plantilla creada (Email Templates)
 // Recordar: el destinatario (ramirotrevisan@gmail.com u otro) se
 // configura en el campo "To Email" dentro de la plantilla en el dashboard.
-const TEMPLATE_ID = "TU_TEMPLATE_ID";
+const TEMPLATE_ID = "template_i55r7ie";
 
 // ================================================================
 
