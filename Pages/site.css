@@ -1,0 +1,7 @@
+/* Archivo de compatibilidad: los estilos están organizados en /css. */
+@import url('../css/style.css');
+@import url('../css/header.css');
+@import url('../css/home.css');
+@import url('../css/servicios.css');
+@import url('../css/footer.css');
+@import url('../css/carrusel.css');

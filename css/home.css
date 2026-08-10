@@ -1,0 +1,52 @@
+.hero,
+.page-title {
+    background: linear-gradient(120deg, var(--negro), var(--indigo));
+    color: var(--blanco)
+}
+
+.hero {
+    padding: 110px 0
+}
+
+.hero h1 {
+    font-size: clamp(2.4rem, 6vw, 4.5rem);
+    margin: 0 0 18px
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.12rem
+}
+
+.page-title {
+    padding: 68px 0
+}
+
+.page-title h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.2rem)
+}
+
+.soft {
+    background: var(--rosa-claro)
+}
+
+.eyebrow {
+    color: var(--malva);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: .75rem
+}
+
+h2 {
+    color: var(--indigo);
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    margin: 0 0 20px
+}
+
+@media(max-width:700px) {
+    .hero {
+        padding: 80px 0
+    }
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --lila-claro: #9B8AC0;
+    --indigo: #302D7F;
+    --blanco: #FFFFFF;
+    --negro: #1B1E1E;
+    --malva: #8A737E;
+    --rosa-claro: #D3C3C5;
+    --arena: #D1B1A2;
+    --oliva: #A09A82;
+    --linea: #D3C3C5;
+    --titulo: 'Saphira', Georgia, serif;
+    --texto: 'Montserrat', Arial, sans-serif
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    color: var(--negro);
+    background: var(--blanco);
+    font: 16px/1.65 var(--texto)
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--titulo);
+    line-height: 1.2
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+.wrap {
+    width: min(1120px, calc(100% - 40px));
+    margin: auto
+}
+
+section {
+    padding: 72px 0
+}
+
+.grid {
+    display: grid;
+    gap: 24px
+}
+
+.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.three {
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+
+.card {
+    border: 1px solid var(--linea);
+    background: var(--blanco);
+    padding: 24px
+}
+
+.card:hover {
+    border-color: var(--lila-claro)
+}
+
+.list {
+    padding-left: 20px
+}
+
+.list li {
+    margin: 7px 0
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px
+}
+
+.placeholder {
+    min-height: 190px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: var(--arena);
+    color: var(--indigo);
+    padding: 24px;
+    font-family: var(--titulo)
+}
+
+@media(max-width:700px) {
+
+    .two,
+    .three,
+    .gallery {
+        grid-template-columns: 1fr
+    }
+
+    section {
+        padding: 52px 0
+    }
+}
