@@ -1,0 +1,6 @@
+.site-footer {
+    background: var(--negro);
+    color: var(--blanco);
+    padding: 26px 0;
+    font-size: .9rem
+}

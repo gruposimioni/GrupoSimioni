@@ -1,0 +1,40 @@
+.location {
+    border-bottom: 1px solid var(--linea);
+    padding: 16px 0
+}
+
+.form {
+    display: grid;
+    gap: 14px
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--linea);
+    background: var(--blanco);
+    color: var(--negro);
+    font: inherit
+}
+
+.form button {
+    justify-self: start;
+    border: 0;
+    background: var(--indigo);
+    color: var(--blanco);
+    padding: 12px 24px;
+    font: 600 1rem var(--texto);
+    cursor: pointer
+}
+
+.form button:hover,
+.form button:focus-visible {
+    background: var(--malva)
+}
+
+.form-status {
+    margin: 0;
+    color: var(--indigo);
+    font-weight: 600
+}

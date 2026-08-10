@@ -1,0 +1,69 @@
+.site-header {
+    border-bottom: 1px solid var(--linea);
+    background: var(--blanco)
+}
+
+.header-row {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    position: relative
+}
+
+.logo {
+    display: block;
+    width: 160px;
+    height: 48px;
+    background: url('../assets/img/logoSinFondo.png') left center / contain no-repeat;
+    font-size: 0
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: .86rem;
+    font-weight: 600
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    color: var(--lila-claro)
+}
+
+.menu-toggle {
+    display: none;
+    border: 1px solid var(--indigo);
+    background: var(--blanco);
+    color: var(--indigo);
+    padding: 8px 12px;
+    font: 600 .86rem var(--texto);
+    cursor: pointer
+}
+
+@media(max-width:700px) {
+    .header-row {
+        padding: 18px 0;
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 18px
+    }
+
+    .site-nav {
+        display: none
+    }
+
+    .site-nav.is-open {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+}
