@@ -3,6 +3,64 @@
     padding: 16px 0
 }
 
+/* Tarjetas de localidad que llevan a cada sala velatoria */
+.card-sala {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-weight: 600
+}
+
+.card-sala::after {
+    content: "\203A";
+    color: var(--lila-claro);
+    font-size: 1.6rem;
+    line-height: 1
+}
+
+.card-sala:hover,
+.card-sala:focus-visible {
+    border-color: var(--indigo);
+    color: var(--indigo)
+}
+
+/* Ficha de sala velatoria */
+.volver {
+    margin: 0 0 24px;
+    font-weight: 600
+}
+
+.volver a:hover,
+.volver a:focus-visible {
+    color: var(--lila-claro)
+}
+
+.direccion {
+    margin: 0 0 20px;
+    font-weight: 600;
+    color: var(--indigo)
+}
+
+.mapa {
+    aspect-ratio: 16/9;
+    border: 1px solid var(--linea);
+    background: var(--rosa-claro)
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0
+}
+
+@media(max-width:700px) {
+    .mapa {
+        aspect-ratio: 4/3
+    }
+}
+
 .form {
     display: grid;
     gap: 14px

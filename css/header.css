@@ -23,6 +23,7 @@
 .site-nav {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 16px;
     font-size: .86rem;
     font-weight: 600
@@ -31,6 +32,98 @@
 .site-nav a:hover,
 .site-nav a:focus-visible {
     color: var(--lila-claro)
+}
+
+.site-nav>a[aria-current="page"],
+.submenu-toggle.is-active {
+    color: var(--indigo);
+    border-bottom: 2px solid var(--indigo)
+}
+
+/* Desplegable de servicios */
+.has-submenu {
+    position: relative
+}
+
+/* Puente invisible: evita que el menu se cierre al bajar el mouse hacia el panel */
+.has-submenu::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 12px
+}
+
+.submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: none;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+    cursor: pointer
+}
+
+.submenu-toggle:hover,
+.submenu-toggle:focus-visible {
+    color: var(--lila-claro)
+}
+
+.submenu-toggle::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform .2s
+}
+
+.has-submenu.is-open .submenu-toggle::after {
+    transform: rotate(-135deg);
+    margin-top: 3px
+}
+
+.submenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    min-width: 230px;
+    padding: 8px 0;
+    border: 1px solid var(--linea);
+    background: var(--blanco);
+    box-shadow: 0 10px 24px rgba(27, 30, 30, .12);
+    z-index: 50
+}
+
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu,
+.has-submenu.is-open .submenu {
+    display: flex
+}
+
+.submenu a {
+    padding: 9px 18px;
+    font-weight: 500;
+    white-space: nowrap
+}
+
+.submenu a:hover,
+.submenu a:focus-visible {
+    background: var(--rosa-claro);
+    color: var(--indigo)
+}
+
+.submenu a[aria-current="page"] {
+    color: var(--indigo);
+    box-shadow: inset 3px 0 0 var(--indigo)
 }
 
 .menu-toggle {
@@ -64,6 +157,38 @@
     .site-nav.is-open {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         width: 100%
+    }
+
+    /* En mobile el desplegable funciona como acordeon, no por hover */
+    .has-submenu {
+        width: 100%
+    }
+
+    .has-submenu::before {
+        display: none
+    }
+
+    .has-submenu:hover .submenu,
+    .has-submenu:focus-within .submenu {
+        display: none
+    }
+
+    .has-submenu.is-open .submenu {
+        display: flex
+    }
+
+    .submenu {
+        position: static;
+        min-width: 0;
+        margin: 8px 0 0;
+        border: 0;
+        border-left: 2px solid var(--linea);
+        box-shadow: none
+    }
+
+    .submenu a {
+        padding: 8px 14px
     }
 }

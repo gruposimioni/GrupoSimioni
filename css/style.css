@@ -37,6 +37,11 @@ a {
     text-decoration: none
 }
 
+img {
+    max-width: 100%;
+    height: auto
+}
+
 .wrap {
     width: min(1120px, calc(100% - 40px));
     margin: auto
