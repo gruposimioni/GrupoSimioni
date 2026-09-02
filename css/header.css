@@ -15,10 +15,23 @@
 .logo {
     display: block;
     width: 160px;
-    height: 48px;
+    height: 100px;
     background: url('../assets/img/logoSinFondo.png') left center / contain no-repeat;
-    font-size: 0
+    font-size: 0;
+    transition: transform 0.3s ease-in-out; 
 }
+
+/* 2. Efecto al pasar el mouse por encima (Hover) */
+.logo:hover {
+    /* Agranda el logo un 5% (1.05). Usa 1.08 si lo quieres un poco más grande */
+    transform: scale(1.08); 
+}
+
+/* 3. Opcional: Pequeño efecto visual al hacer clic */
+.logo:active {
+    transform: scale(0.98); 
+}
+
 
 .site-nav {
     display: flex;

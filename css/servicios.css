@@ -96,3 +96,122 @@
     color: var(--indigo);
     font-weight: 600
 }
+
+/* Contenedor Grid general para posicionar las tarjetas de forma simétrica */
+.wrap.two.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 16px;
+}
+
+/* Construcción del recuadro base de la tarjeta */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    /* Borde del marco gris suave */
+    border-radius: 8px;
+    /* Esquinas ligeramente redondeadas */
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    /* Sombra muy sutil */
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #1a237e;
+    /* Tonalidad azul elegante para títulos */
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Reseteo de estilos de lista por defecto */
+.card .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espacio reservado para los ítems y sus viñetas */
+.card .list li {
+    position: relative;
+    padding-left: 24px;
+    /* Deja espacio fijo para el ítem de la izquierda */
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Generador del ítem visual a la izquierda de cada li (ej. un círculo azul sutil) */
+.card .list li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background-color: #3b5998;
+    /* Color del ítem/punto */
+    border-radius: 50%;
+}
+
+/* Estilos de tipografías principales y secundarias */
+.service-title {
+    font-size: 0.95rem;
+    color: #2d3748;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.location-restriction {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 3px;
+    font-weight: 400;
+}
+
+.card-footer {
+    margin-top: auto;
+    /* Empuja el pie al fondo si las tarjetas tienen alturas distintas */
+    padding-top: 16px;
+    font-size: 0.8rem;
+    color: #a0aec0;
+}
+
+/* --- CONFIGURACIÓN PLAN PLATA --- */
+.card-plata {
+    border-top: 5px solid #a0aec0;
+    /* Línea superior color plata/gris metálico */
+}
+
+.card-plata h2 {
+    color: #4a5568;
+    /* Título en tono gris oscuro cromado */
+}
+
+.card-plata .list li::before {
+    background-color: #a0aec0;
+    /* Viñetas color plata */
+}
+
+
+/* --- CONFIGURACIÓN PLAN ORO --- */
+.card-oro {
+    border-top: 5px solid #d4af37;
+    /* Línea superior color oro */
+}
+
+.card-oro h2 {
+    color: #aa8000;
+    /* Título en tono dorado oscuro para garantizar legibilidad */
+}
+
+.card-oro .list li::before {
+    background-color: #d4af37;
+    /* Viñetas color oro */
+}

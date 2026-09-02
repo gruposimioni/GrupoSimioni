@@ -1,70 +1,108 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Servicios Sociales | Grupo Simioni</title>
-    <link rel="stylesheet" href="../site.css" />
-    <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="wrap header-row">
-        <a class="logo" href="../index.html">GRUPO SIMIONI</a>
-        <nav class="site-nav">
-          <a href="../nosotrosPage.html">Nosotros</a>
-          
-          <div class="nav-item has-submenu">
-            <button type="button" class="submenu-toggle" aria-expanded="false">
-              Servicios
-            </button>
-            <div class="submenu">
-              <a href="sepeliosPage.html">Sepelios</a>
-              <a href="velatoriosPage.html">Velatorios</a>
-              <a href="trasladosPage.html">Traslados</a>
-              <a href="serviciosSocialesPage.html" aria-current="page">Sociales</a>
-              <a href="ambulanciasPage.html">Ambulancias</a>
-              <a href="ortopediaPage.html">Ortopedia</a>
-              <a href="crematorioPage.html">Crematorio</a>
-              <a href="arteFunerarioPage.html">Arte Funerario</a>
-              <a href="audiologiaPage.html">Soluciones Audiológicas</a>
-            </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Servicios Sociales | Grupo Simioni</title>
+  <link rel="stylesheet" href="../site.css" />
+  <link rel="icon" type="image/png" href="../../assets/img/logo.png" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="../index.html">GRUPO SIMIONI</a>
+      <nav class="site-nav">
+        <a href="../nosotrosPage.html">Nosotros</a>
+
+        <div class="nav-item has-submenu">
+          <button type="button" class="submenu-toggle" aria-expanded="false">
+            Servicios
+          </button>
+          <div class="submenu">
+            <a href="sepeliosPage.html">Sepelios</a>
+            <a href="velatoriosPage.html">Velatorios</a>
+            <a href="trasladosPage.html">Traslados</a>
+            <a href="serviciosSocialesPage.html" aria-current="page">Sociales</a>
+            <a href="ambulanciasPage.html">Ambulancias</a>
+            <a href="ortopediaPage.html">Ortopedia</a>
+            <a href="crematorioPage.html">Crematorio</a>
+            <a href="arteFunerarioPage.html">Arte Funerario</a>
+            <a href="audiologiaPage.html">Soluciones Audiológicas</a>
           </div>
-          <a href="../contactoPage.html">Contacto</a>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="page-title">
-        <div class="wrap"><h1>Servicios Sociales</h1></div>
-      </div>
-      <section>
-        <div class="wrap two grid">
-          <article class="card">
-            <h2>Plan Plata</h2>
-            <ul class="list">
-              <li>Asistencia al viajero</li>
-              <li>Traslados en ambulancia</li>
-              <li>Enfermería</li>
-              <li>Servicio de sepelio</li>
-              <li>Entrega de útiles escolares</li>
-              <li>Préstamo de elementos de ortopedia</li>
-            </ul>
-            <p>Beneficios exclusivos según localidad.</p>
-          </article>
-          <article class="card">
-            <h2>Plan Oro</h2>
-            <p>Beneficios adicionales:</p>
-            <ul class="list">
-              <li>Indemnización de gastos médicos</li>
-              <li>Descuentos en farmacias</li>
-              <li>Atención médica virtual</li>
-            </ul>
-          </article>
         </div>
+        <a href="../contactoPage.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="page-title">
+      <div class="wrap">
+        <h1>Servicios Sociales</h1>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <p> Te permite anticiparte a una necesidad, entendiendo el presente y asegurando el futuro.
+        Un sistema de abono que te ofrece muchos beneficios por una minima cuota.
+      </p>
+      <p>Elegi el plan a tu medida</p>
+
+      <div class="wrap two grid">
+        <!-- Tarjeta con acento de color Plata -->
+        <article class="card card-plata">
+          <h2>Plan Plata</h2>
+          <ul class="list">
+            <li>
+              <span class="service-title">Asistencia al viajero con <a href="https://www.universal-assistance.com/ar"
+                  target="_blank" style="text-decoration: underline;">Universal Assistance</a></span>
+            </li>
+            <li>
+              <span class="service-title">Traslados en ambulancia</span>
+              <span class="location-restriction">Exclusivo para San José de la Esquina y Arteaga</span>
+            </li>
+            <li>
+              <span class="service-title">Enfermería</span>
+              <span class="location-restriction">Exclusivo para San José de la Esquina, Arteaga y Berabevú</span>
+            </li>
+            <li>
+              <span class="service-title">Servicio de sepelio</span>
+            </li>
+            <li>
+              <span class="service-title">Entrega de útiles escolares</span>
+              <span class="location-restriction">Exclusivo para San José de la Esquina y Arteaga</span>
+            </li>
+            <li>
+              <span class="service-title">Préstamo de elementos de ortopedia</span>
+              <span class="location-restriction">Exclusivo para San José de la Esquina y Arteaga</span>
+            </li>
+          </ul>
+          <p class="card-footer"><em>Beneficios exclusivos sujetos a las localidades indicadas.</em></p>
+        </article>
+
+        <!-- Tarjeta con acento de color Oro -->
+        <article class="card card-oro">
+          <h2>Plan Oro</h2>
+          <ul class="list">
+            <li>
+              <span class="service-title">Beneficios adicionales de <a href="https://www.sancorseguros.com.ar/"
+                  target="_blank" style="text-decoration: underline;">Sancor Seguros</a></span>
+            </li>
+            <li><span class="service-title">Indemnización de gastos médicos</span></li>
+            <li><span class="service-title">Descuentos en farmacias</span></li>
+            <li><span class="service-title">Atención médica virtual</span></li>
+          </ul>
+        </article>
+      </div>
+
+
       </section>
-    </main>
-    <footer class="site-footer"><div class="wrap">Grupo Simioni</div></footer>
-    <script src="../../js/main.js"></script>
-  </body>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">Grupo Simioni</div>
+  </footer>
+  <script src="../../js/main.js"></script>
+</body>
+
 </html>
