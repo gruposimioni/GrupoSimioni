@@ -38,7 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       const open = !item.classList.contains('is-open');
       submenus.forEach((other) => {
-        if (other !== item) {
+        // No cerrar los desplegables ancestros ni los anidados dentro de este
+        if (other !== item && !item.contains(other) && !other.contains(item)) {
           other.classList.remove('is-open');
           const b = other.querySelector('.submenu-toggle');
           if (b) b.setAttribute('aria-expanded', 'false');

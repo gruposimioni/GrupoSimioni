@@ -5,10 +5,17 @@
 */
 const galerias = {
   // Salas velatorias: una carpeta por localidad dentro de assets/img/velatorio
+  'pagina-principal': { carpeta: 'paginaPrincipal', alt: 'Pagina Principal', imagenes: ['_DSC6586.jpg', '_DSC6600.jpg', '_DSC6603.jpg', '_DSC6669.jpg'] },
+  'pagina-principal2': { carpeta: 'paginaPrincipal2', alt: 'Pagina Principal', imagenes: ['_DSC7402.jpg', '_DSC7374.jpg', '_DSC7384.jpg', '_DSC7391.jpg'] },
+  'fotos-historia': { carpeta: 'fotosHistoria', alt: 'Pagina Principal', imagenes: ['historia7.png', 'historia1.png', 'historia2.png', 'historia3.png', 'historia4.png', 'historia5.png', 'historia6.png', 'historia8.png'] },
+  'fotos-historia2': { carpeta: 'sepelios', alt: 'Pagina Principal', imagenes: ['_DSC6353.jpg', '_DSC6330.jpg', '_DSC6340.jpg', '_DSC6342.jpg'] },
+  
   'sala-sanjose': {
     carpeta: 'velatorio/sanjose', alt: 'Sala velatoria de San José de la Esquina',
     imagenes: ['_DSC6418.jpg', '_DSC6569.jpg', '_DSC6696.jpg', '_DSC6720.jpg', '_DSC6782.jpg', '_DSC6846.jpg', '_DSC6867.jpg']
   },
+
+
   'sala-arteaga': { carpeta: 'velatorio/arteaga', alt: 'Sala velatoria de Arteaga', imagenes: [] },
   'sala-cruzalta': { carpeta: 'velatorio/cruzalta', alt: 'Sala velatoria de Cruz Alta', imagenes: [] },
   'sala-berabevu': { carpeta: 'velatorio/berabevu', alt: 'Sala velatoria de Berabevú', imagenes: [] },
@@ -18,7 +25,7 @@ const galerias = {
   crematorio: { carpeta: 'crematorio', alt: 'Crematorio de Cruz Alta', imagenes: [] },
   audiologia: { carpeta: 'audiologia', alt: 'Soluciones audiológicas', imagenes: [] },
   nosotros: { carpeta: 'nosotros', alt: 'Grupo Simioni', imagenes: ['_DSC6379.jpg'] },
-  traslados: { carpeta: 'traslados', alt: 'Unidad de traslados', imagenes: [] },
+  traslados: { carpeta: 'traslados', alt: 'Unidad de traslados', imagenes: ['_DSC6315.jpg', '_DSC6369.jpg'] },
   sepelios: { carpeta: 'sepelios', alt: 'Servicio de sepelio', imagenes: ['_DSC6219.jpg', '_DSC6335.jpg', '_DSC6355.jpg'] }
 };
 

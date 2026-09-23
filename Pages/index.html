@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Grupo Simioni</title>
     <link rel="stylesheet" href="site.css" />
-    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="icon" type="image/png" href="../assets/img/logoSinFondo.png" />
   </head>
   <body>
     <header class="site-header">
@@ -19,9 +19,15 @@
               Servicios
             </button>
             <div class="submenu">
-              <a href="Services/sepeliosPage.html">Sepelios</a>
-              <a href="Services/velatoriosPage.html">Velatorios</a>
-              <a href="Services/trasladosPage.html">Traslados</a>
+              <div class="nav-item has-submenu">
+                <button type="button" class="submenu-toggle" aria-expanded="false">
+                  Sepelios
+                </button>
+                <div class="submenu">
+                  <a href="Services/trasladosPage.html">Traslados</a>
+                  <a href="Services/velatoriosPage.html">Velatorios</a>
+                </div>
+              </div>
               <a href="Services/serviciosSocialesPage.html">Servicios Sociales</a>
               <a href="Services/ambulanciasPage.html">Ambulancias</a>
               <a href="Services/ortopediaPage.html">Ortopedia</a>
@@ -39,43 +45,74 @@
         <div class="wrap">
           <h1>Grupo Simioni</h1>
           <p>
-            Un grupo humano profesional y capacitado que contempla las
-            necesidades de usted y su familia con un siglo de historia que
-            respalda nuestro trabajo.
+            Somos un grupo humano profesional y capacitado que contempla necesidades de usted y su familia en los momentos difíciles con EXPERIENCIA, COMPROMISO Y PROFESIONALISMO 
           </p>
         </div>
       </section>
       <section>
         <div class="wrap">
-          <h2>Experiencia, Compromiso y Profesionalismo</h2>
-          <p>
-            Apostando a la capacitación permanente con la mirada puesta en la
-            excelencia.
-          </p>
+          <h3 align="center"  >APOSTAMOS A LA CAPACITACIÓN  PERMANENTE CON LA MIRADA PUESTA EN LA EXCELENCIA</h3>
+          <img style="display: block; margin: 0 auto;" src="../assets/img/paginaPrincipal/_DSC6831.jpg"  width="800" height="800" alt="Imagen de salas varias" />
         </div>
+        
       </section>
+      <section>
+    <div class="wrap">
+
+        <h3 style="text-align: center;">NUESTRAS OFICINAS</h3>
+
+        <div class="oficinas">
+            
+            <div class="oficina">
+              <div class="carrusel" data-carrusel="pagina-principal"></div>
+                <p>Rivadavia 944 de San José de la Esquina</p>
+            </div>
+
+            <div class="oficina">
+              <div class="carrusel" data-carrusel="pagina-principal2"></div>
+                <p>Independencia 364 de Corral de Bustos</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
       <section class="soft">
         <div class="wrap">
           <h2>Servicios</h2>
-          <div class="grid three">
-            <a class="card" href="Services/sepeliosPage.html">Sepelios</a
-            ><a class="card" href="Services/velatoriosPage.html">Velatorios</a
-            ><a class="card" href="Services/trasladosPage.html">Traslados</a
-            ><a class="card" href="Services/serviciosSocialesPage.html"
-              >Servicios Sociales</a
-            ><a class="card" href="Services/ambulanciasPage.html">Ambulancias</a
-            ><a class="card" href="Services/ortopediaPage.html">Ortopedia</a
-            ><a class="card" href="Services/crematorioPage.html">Crematorio</a
-            ><a class="card" href="Services/arteFunerarioPage.html"
-              >Arte Funerario</a
-            ><a class="card" href="Services/audiologiaPage.html"
-              >Soluciones Audiológicas</a
-            >
+          <div class="servicios-mapa">
+            <svg class="mapa-flechas" viewBox="0 0 1000 700" aria-hidden="true">
+              <defs>
+                <marker id="punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10 z" />
+                </marker>
+              </defs>
+              <path d="M500 200 Q520 165 500 130" />
+              <path d="M613 252 Q670 240 689 186" />
+              <path d="M649 331 Q701 352 746 319" />
+              <path d="M638 408 Q677 458 740 450" />
+              <path d="M567 484 Q565 530 603 556" />
+              <path d="M433 484 Q395 510 397 556" />
+              <path d="M362 408 Q299 401 260 450" />
+              <path d="M351 331 Q306 298 254 319" />
+              <path d="M387 252 Q367 198 311 186" />
+            </svg>
+            <div class="mapa-logo"><img src="../assets/img/logo.jpeg" alt="Grupo Simioni" /></div>
+            <a class="ovalo" style="left:50%;top:11.1%" href="Services/sepeliosPage.html">Sepelios</a>
+            <a class="ovalo" style="left:74.1%;top:20.2%" href="Services/velatoriosPage.html">Velatorios</a>
+            <a class="ovalo" style="left:86.9%;top:43.3%" href="Services/trasladosPage.html">Traslados</a>
+            <a class="ovalo" style="left:82.5%;top:69.4%" href="Services/serviciosSocialesPage.html">Servicios Sociales</a>
+            <a class="ovalo" style="left:62.8%;top:86.5%" href="Services/ambulanciasPage.html">Ambulancias</a>
+            <a class="ovalo" style="left:37.2%;top:86.5%" href="Services/ortopediaPage.html">Ortopedia<small>Préstamo/Alquiler Ventas</small></a>
+            <a class="ovalo" style="left:17.5%;top:69.4%" href="Services/crematorioPage.html">Crematorio<small>De la Cruz Alta</small></a>
+            <a class="ovalo" style="left:13.1%;top:43.3%" href="Services/arteFunerarioPage.html">Arte Funerario</a>
+            <a class="ovalo" style="left:25.9%;top:20.2%" href="Services/audiologiaPage.html">Soluciones Audiológicas</a>
           </div>
         </div>
       </section>
     </main>
     <footer class="site-footer"><div class="wrap">Grupo Simioni</div></footer>
     <script src="../js/main.js"></script>
+    <script src="../js/slider.js"></script>
   </body>
 </html>

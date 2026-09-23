@@ -116,9 +116,9 @@
     z-index: 50
 }
 
-.has-submenu:hover .submenu,
-.has-submenu:focus-within .submenu,
-.has-submenu.is-open .submenu {
+.has-submenu:hover > .submenu,
+.has-submenu:focus-within > .submenu,
+.has-submenu.is-open > .submenu {
     display: flex
 }
 
@@ -137,6 +137,54 @@
 .submenu a[aria-current="page"] {
     color: var(--indigo);
     box-shadow: inset 3px 0 0 var(--indigo)
+}
+
+/* Sub-desplegable anidado (Sepelios: Traslados / Velatorios) */
+.submenu .has-submenu {
+    position: relative
+}
+
+.submenu .has-submenu::before {
+    display: none
+}
+
+.submenu .submenu-toggle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px;
+    font-weight: 500;
+    white-space: nowrap
+}
+
+.submenu .submenu-toggle:hover,
+.submenu .submenu-toggle:focus-visible {
+    background: var(--rosa-claro);
+    color: var(--indigo)
+}
+
+/* Se despliega hacia abajo dentro del mismo panel, solo al hacer clic */
+.submenu .has-submenu > .submenu {
+    position: static;
+    min-width: 0;
+    padding: 0 0 4px;
+    border: 0;
+    background: transparent;
+    box-shadow: none
+}
+
+.submenu .has-submenu:hover > .submenu,
+.submenu .has-submenu:focus-within > .submenu {
+    display: none
+}
+
+.submenu .has-submenu.is-open > .submenu {
+    display: flex
+}
+
+.submenu .submenu a {
+    padding-left: 34px
 }
 
 .menu-toggle {
@@ -183,12 +231,12 @@
         display: none
     }
 
-    .has-submenu:hover .submenu,
-    .has-submenu:focus-within .submenu {
+    .has-submenu:hover > .submenu,
+    .has-submenu:focus-within > .submenu {
         display: none
     }
 
-    .has-submenu.is-open .submenu {
+    .has-submenu.is-open > .submenu {
         display: flex
     }
 
@@ -203,5 +251,20 @@
 
     .submenu a {
         padding: 8px 14px
+    }
+
+    .submenu .submenu-toggle {
+        padding: 8px 14px
+    }
+
+    .submenu .has-submenu::before {
+        display: none
+    }
+
+    .submenu .has-submenu > .submenu {
+        position: static;
+        top: auto;
+        left: auto;
+        margin: 4px 0 4px 14px
     }
 }

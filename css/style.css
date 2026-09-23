@@ -111,3 +111,21 @@ section {
         padding: 52px 0
     }
 }
+
+.oficinas {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+}
+
+.oficina {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+@media(max-width:700px) {
+    .oficinas {
+        flex-direction: column
+    }
+}
