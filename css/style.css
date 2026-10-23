@@ -10,8 +10,10 @@
     --arena: #D1B1A2;
     --oliva: #A09A82;
     --linea: #D3C3C5;
+    --azul-francia: #3b438b;
     --titulo: 'Saphira', Georgia, serif;
-    --texto: 'Montserrat', Arial, sans-serif
+    --texto: 'Montserrat', Arial, sans-serif;
+    --texto-gruposimioni: 'Brush Script MT', 'Brush Script Std', cursive;
 }
 
 * {
@@ -30,6 +32,10 @@ h2,
 h3 {
     font-family: var(--titulo);
     line-height: 1.2
+}
+
+.font-gruposimioni {
+    font-family: var(--texto-gruposimioni)
 }
 
 a {

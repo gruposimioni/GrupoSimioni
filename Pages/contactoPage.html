@@ -46,10 +46,16 @@
       </div>
       <section>
         <div class="wrap two grid">
-          <form class="form">
-            <label>Nombre<input type="text" required /></label>
-            <label>Correo electrónico<input type="email" required /></label>
-            <label>Mensaje<textarea required></textarea></label>
+          <form
+            class="form"
+            action="https://formsubmit.co/empresasimionisj@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde Grupo Simioni" />
+            <label>Nombre y Apellido<input type="text" name="nombre" required /></label>
+            <label>Correo electrónico<input type="email" name="_replyto" required /></label>
+            <label>Número de teléfono<input type="tel" name="telefono" required /></label>
+            <label>Mensaje<textarea name="mensaje" required></textarea></label>
             <button type="submit">Enviar</button>
           </form>
           <div>
