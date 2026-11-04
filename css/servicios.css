@@ -215,3 +215,16 @@
     background-color: #d4af37;
     /* Viñetas color oro */
 }
+.sucursales {
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+    color: var(--indigo);
+    font-size: 1.05rem
+}
+
+.carrusel.carrusel-ortopedia {
+    margin-top: 56px
+}

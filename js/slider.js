@@ -26,6 +26,8 @@ const galerias = {
     imagenes: ['_DSC6849.jpg', '_DSC6870.jpg', '_DSC6867.jpg','_DSC6861.jpg'] },
   'sala-corral': { carpeta: 'velatorio/corral', alt: 'Sala velatoria de Corral de Bustos', 
     imagenes: ['_DSC7439.jpg', '_DSC7441.jpg', '_DSC7448.jpg','_DSC7477.jpg','_DSC7471.jpg'] },
+  ortopedia: { carpeta: 'ortopedia', alt: 'Productos de ortopedia', 
+    imagenes: ['_DSC7417.jpg','_DSC7426.jpg','_DSC7425.jpg','_DSC7421.jpg','_DSC6655.jpg', '_DSC6658.jpg', '_DSC6662.jpg'] },
   placas: { carpeta: 'placas', alt: 'Trabajo de arte funerario', imagenes: [] },
   ambulancias: { carpeta: 'ambulancias', alt: 'Ambulancia de Grupo Simioni', imagenes: [] },
   crematorio: { carpeta: 'crematorio', alt: 'Crematorio de Cruz Alta', imagenes: [] },
