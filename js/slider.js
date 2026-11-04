@@ -12,14 +12,20 @@ const galerias = {
   
   'sala-sanjose': {
     carpeta: 'velatorio/sanjose', alt: 'Sala velatoria de San José de la Esquina',
-    imagenes: ['_DSC6418.jpg', '_DSC6569.jpg', '_DSC6696.jpg', '_DSC6720.jpg', '_DSC6782.jpg', '_DSC6846.jpg', '_DSC6867.jpg']
+    imagenes: ['_DSC6808.jpg', '_DSC6682.jpg', '_DSC6690.jpg', '_DSC6692.jpg', '_DSC6707.jpg', '_DSC6714.jpg', '_DSC6569_1.jpg', '_DSC6795.jpg', '_DSC6774.jpg', '_DSC6776.jpg','_DSC6723.jpg', '_DSC6762.jpg','_DSC6752.jpg']
   },
 
 
-  'sala-arteaga': { carpeta: 'velatorio/arteaga', alt: 'Sala velatoria de Arteaga', imagenes: [] },
-  'sala-cruzalta': { carpeta: 'velatorio/cruzalta', alt: 'Sala velatoria de Cruz Alta', imagenes: [] },
-  'sala-berabevu': { carpeta: 'velatorio/berabevu', alt: 'Sala velatoria de Berabevú', imagenes: [] },
-  'sala-corral': { carpeta: 'velatorio/corral', alt: 'Sala velatoria de Corral de Bustos', imagenes: [] },
+  'sala-arteaga': { carpeta: 'velatorio/arteaga', alt: 'Sala velatoria de Arteaga', 
+    imagenes: ['_DSC6507.jpg', '_DSC6535.jpg', '_DSC6541.jpg', '_DSC6542.jpg'] },
+  'sala-cruzalta-centro': { carpeta: 'velatorio/cruzalta/centro', alt: 'Salas del Centro, Cruz Alta', 
+    imagenes: ['_DSC6444.jpg', '_DSC6449.jpg', '_DSC6454.jpg', '_DSC6456.jpg', '_DSC6458.jpg', '_DSC6477.jpg', '_DSC6494.jpg','_DSC6502.jpg'] },
+  'sala-cruzalta-parque': { carpeta: 'velatorio/cruzalta/parque', alt: 'Sala del Parque, Cruz Alta', 
+    imagenes: ['_DSC6407.jpg','_DSC6425.jpg','_DSC6426.jpg', '_DSC6418_1.jpg'] },
+  'sala-berabevu': { carpeta: 'velatorio/berabevu', alt: 'Sala velatoria de Berabevú', 
+    imagenes: ['_DSC6849.jpg', '_DSC6870.jpg', '_DSC6867.jpg','_DSC6861.jpg'] },
+  'sala-corral': { carpeta: 'velatorio/corral', alt: 'Sala velatoria de Corral de Bustos', 
+    imagenes: ['_DSC7439.jpg', '_DSC7441.jpg', '_DSC7448.jpg','_DSC7477.jpg','_DSC7471.jpg'] },
   placas: { carpeta: 'placas', alt: 'Trabajo de arte funerario', imagenes: [] },
   ambulancias: { carpeta: 'ambulancias', alt: 'Ambulancia de Grupo Simioni', imagenes: [] },
   crematorio: { carpeta: 'crematorio', alt: 'Crematorio de Cruz Alta', imagenes: [] },
