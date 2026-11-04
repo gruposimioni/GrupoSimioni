@@ -5,6 +5,10 @@
     font-size: .9rem
 }
 
+.site-footer .font-gruposimioni {
+    font-size: 1.6rem
+}
+
 .whatsapp-float {
     position: fixed;
     right: max(20px, env(safe-area-inset-right));
