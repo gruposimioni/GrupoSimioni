@@ -19,9 +19,7 @@
               Servicios
             </button>
             <div class="submenu">
-              <a href="sepeliosPage.html">Sepelios</a>
-              <a href="velatoriosPage.html" aria-current="page">Velatorios</a>
-              <a href="trasladosPage.html">Traslados</a>
+              <a href="sepeliosPage.html" aria-current="page">Sepelios</a>
               <a href="serviciosSocialesPage.html">Servicios Sociales</a>
               <a href="ambulanciasPage.html">Ambulancias</a>
               <a href="ortopediaPage.html">Ortopedia</a>
@@ -40,19 +38,63 @@
       </div>
       <section>
         <div class="wrap">
-          <p class="volver"><a href="velatoriosPage.html">&lsaquo; Volver a Velatorios</a></p>
-          <div class="carrusel" data-carrusel="sala-cruzalta"></div>
+          <p class="volver">
+            <a href="velatoriosPage.html">&lsaquo; Volver a Velatorios</a>
+          </p>
+          <div class="oficinas">
+            <div class="oficina">
+              <h3>Salas del Centro</h3>
+              <div class="carrusel" data-carrusel="sala-cruzalta-centro"></div>
+            </div>
+            <div class="oficina">
+              <h3>Sala del Parque</h3>
+              <div class="carrusel" data-carrusel="sala-cruzalta-parque"></div>
+            </div>
+          </div>
           <h2>Cómo llegar</h2>
-          <!-- TODO: reemplazar por la direccion exacta de la sala y actualizar el src del iframe -->
-          <p class="direccion">Cruz Alta &middot; dirección a confirmar</p>
-          <div class="mapa">
-            <iframe
-              src="https://www.google.com/maps?q=Cruz%20Alta%2C%20C%C3%B3rdoba%2C%20Argentina&amp;output=embed"
-              title="Ubicación de la sala velatoria de Cruz Alta"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen
-            ></iframe>
+          <div class="oficinas">
+            <div class="oficina">
+              <h3>Salas del Centro</h3>
+              <p class="direccion">Silvio Agostini 870, Cruz Alta, Córdoba</p>
+              <p class="direccion">
+                Teléfonos:
+                <a href="tel:+543467400900">3467 400900</a> -
+                <a href="tel:+543467434083">3467 434083</a>
+              </p>
+              <div class="mapa">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.848912834766!2d-61.81059498822628!3d-33.00775857486847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c9bbcd175f7dc1%3A0xdb8651ec4a6a734c!2sSilvio%20Agostini%20870%2C%20X2189%20Cruz%20Alta%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1787413554664!5m2!1ses-419!2sus"
+                  width="800"
+                  height="600"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                ></iframe>
+              </div>
+            </div>
+            <div class="oficina">
+              <h3>Sala del Parque</h3>
+              <!-- TODO: completar dirección y teléfonos de la Sala del Parque -->
+              <p class="direccion">Dirección a confirmar, Cruz Alta, Córdoba</p>
+              <p class="direccion">
+                Teléfonos:
+                <a href="tel:+543467400900">3467 400900</a> -
+                <a href="tel:+543467434083">3467 434083</a>
+              </p>
+              <div class="mapa">
+                <iframe
+                  src="https://maps.google.com/maps?q=-33.004642,-61.826057&amp;z=16&amp;hl=es&amp;output=embed"
+                  width="800"
+                  height="600"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  title="Mapa de la Sala del Parque, Cruz Alta"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>

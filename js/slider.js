@@ -5,20 +5,39 @@
 */
 const galerias = {
   // Salas velatorias: una carpeta por localidad dentro de assets/img/velatorio
+  'pagina-principal': { carpeta: 'paginaPrincipal', alt: 'Pagina Principal', imagenes: ['_DSC6586.jpg', '_DSC6600.jpg', '_DSC6603.jpg', '_DSC6669.jpg'] },
+  'pagina-principal2': { carpeta: 'paginaPrincipal2', alt: 'Pagina Principal', imagenes: ['_DSC7402.jpg', '_DSC7374.jpg', '_DSC7384.jpg', '_DSC7391.jpg'] },
+  'fotos-historia': { carpeta: 'fotosHistoria', alt: 'Pagina Principal', imagenes: ['historia7.png', 'historia1.png', 'historia2.png', 'historia3.png', 'historia4.png', 'historia5.png', 'historia6.png', 'historia8.png'] },
+  'fotos-historia2': { carpeta: 'sepelios', alt: 'Pagina Principal', imagenes: ['_DSC6353.jpg', '_DSC6330.jpg', '_DSC6340.jpg', '_DSC6342.jpg'] },
+  
   'sala-sanjose': {
     carpeta: 'velatorio/sanjose', alt: 'Sala velatoria de San José de la Esquina',
-    imagenes: ['_DSC6418.jpg', '_DSC6569.jpg', '_DSC6696.jpg', '_DSC6720.jpg', '_DSC6782.jpg', '_DSC6846.jpg', '_DSC6867.jpg']
+    imagenes: ['_DSC6808.jpg', '_DSC6682.jpg', '_DSC6690.jpg', '_DSC6692.jpg', '_DSC6707.jpg', '_DSC6714.jpg', '_DSC6569_1.jpg', '_DSC6795.jpg', '_DSC6774.jpg', '_DSC6776.jpg','_DSC6723.jpg', '_DSC6762.jpg','_DSC6752.jpg']
   },
-  'sala-arteaga': { carpeta: 'velatorio/arteaga', alt: 'Sala velatoria de Arteaga', imagenes: [] },
-  'sala-cruzalta': { carpeta: 'velatorio/cruzalta', alt: 'Sala velatoria de Cruz Alta', imagenes: [] },
-  'sala-berabevu': { carpeta: 'velatorio/berabevu', alt: 'Sala velatoria de Berabevú', imagenes: [] },
-  'sala-corral': { carpeta: 'velatorio/corral', alt: 'Sala velatoria de Corral de Bustos', imagenes: [] },
-  placas: { carpeta: 'placas', alt: 'Trabajo de arte funerario', imagenes: [] },
-  ambulancias: { carpeta: 'ambulancias', alt: 'Ambulancia de Grupo Simioni', imagenes: [] },
-  crematorio: { carpeta: 'crematorio', alt: 'Crematorio de Cruz Alta', imagenes: [] },
-  audiologia: { carpeta: 'audiologia', alt: 'Soluciones audiológicas', imagenes: [] },
+
+
+  'sala-arteaga': { carpeta: 'velatorio/arteaga', alt: 'Sala velatoria de Arteaga', 
+    imagenes: ['_DSC6507.jpg', '_DSC6535.jpg', '_DSC6541.jpg', '_DSC6542.jpg'] },
+  'sala-cruzalta-centro': { carpeta: 'velatorio/cruzalta/centro', alt: 'Salas del Centro, Cruz Alta', 
+    imagenes: ['_DSC6444.jpg', '_DSC6449.jpg', '_DSC6454.jpg', '_DSC6456.jpg', '_DSC6458.jpg', '_DSC6477.jpg', '_DSC6494.jpg','_DSC6502.jpg'] },
+  'sala-cruzalta-parque': { carpeta: 'velatorio/cruzalta/parque', alt: 'Sala del Parque, Cruz Alta', 
+    imagenes: ['_DSC6407.jpg','_DSC6425.jpg','_DSC6426.jpg', '_DSC6418_1.jpg'] },
+  'sala-berabevu': { carpeta: 'velatorio/berabevu', alt: 'Sala velatoria de Berabevú', 
+    imagenes: ['_DSC6849.jpg', '_DSC6870.jpg', '_DSC6867.jpg','_DSC6861.jpg'] },
+  'sala-corral': { carpeta: 'velatorio/corral', alt: 'Sala velatoria de Corral de Bustos', 
+    imagenes: ['_DSC7439.jpg', '_DSC7441.jpg', '_DSC7448.jpg','_DSC7477.jpg','_DSC7471.jpg'] },
+  ortopedia: { carpeta: 'ortopedia', alt: 'Productos de ortopedia', 
+    imagenes: ['_DSC7417.jpg','_DSC7426.jpg','_DSC7425.jpg','_DSC7421.jpg','_DSC6655.jpg', '_DSC6658.jpg', '_DSC6662.jpg'] },
+  placas: { carpeta: 'placas', alt: 'Trabajo de arte funerario', 
+    imagenes: ['_DSC8534.jpg', '_DSC8535.jpg', '_DSC8538.jpg', '_DSC8540.jpg', '_DSC8542.jpg','_DSC8544.jpg', '_DSC8547.jpg', '_DSC8551.jpg', '_DSC8554.jpg', '_DSC8556.jpg', '_DSC8558.jpg', '_DSC8560.jpg', '_DSC8562.jpg', '_DSC8564.jpg', '_DSC8569.jpg', '_DSC8571.jpg', '_DSC8574.jpg','_DSC8577.jpg', '_DSC8580.jpg', '_DSC8583.jpg','_DSC8586.jpg'] },
+  ambulancias: { carpeta: 'ambulancias', alt: 'Ambulancia de Grupo Simioni', 
+    imagenes: ['_DSC6319.jpg', '_DSC6326.jpg'] },
+  crematorio: { carpeta: 'crematorio', alt: 'Crematorio De La Cruz Alta', 
+    imagenes: ['_DSC8596.jpg', '_DSC8599.jpg', '_DSC8601.jpg','_DSC8603.jpg', '_DSC8606.jpg', '_DSC8609.jpg'] },
+  audiologia: { carpeta: 'audiologia', alt: 'Soluciones audiológicas', 
+    imagenes: ['_DSC6617.jpg','_DSC6628.jpg', '_DSC6631.jpg', '_DSC6647.jpg'] },
   nosotros: { carpeta: 'nosotros', alt: 'Grupo Simioni', imagenes: ['_DSC6379.jpg'] },
-  traslados: { carpeta: 'traslados', alt: 'Unidad de traslados', imagenes: [] },
+  traslados: { carpeta: 'traslados', alt: 'Unidad de traslados', imagenes: ['_DSC6315.jpg', '_DSC6369.jpg'] },
   sepelios: { carpeta: 'sepelios', alt: 'Servicio de sepelio', imagenes: ['_DSC6219.jpg', '_DSC6335.jpg', '_DSC6355.jpg'] }
 };
 

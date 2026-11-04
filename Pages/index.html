@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Grupo Simioni</title>
     <link rel="stylesheet" href="site.css" />
-    <link rel="icon" type="image/png" href="../assets/img/logo.png" />
+    <link rel="icon" type="image/png" href="../assets/img/logoSinFondo.png" />
   </head>
   <body>
     <header class="site-header">
@@ -20,8 +20,6 @@
             </button>
             <div class="submenu">
               <a href="Services/sepeliosPage.html">Sepelios</a>
-              <a href="Services/velatoriosPage.html">Velatorios</a>
-              <a href="Services/trasladosPage.html">Traslados</a>
               <a href="Services/serviciosSocialesPage.html">Servicios Sociales</a>
               <a href="Services/ambulanciasPage.html">Ambulancias</a>
               <a href="Services/ortopediaPage.html">Ortopedia</a>
@@ -37,45 +35,72 @@
     <main>
       <section class="hero">
         <div class="wrap">
-          <h1>Grupo Simioni</h1>
+          <h1 class="font-gruposimioni">Grupo Simioni</h1>
           <p>
-            Un grupo humano profesional y capacitado que contempla las
-            necesidades de usted y su familia con un siglo de historia que
-            respalda nuestro trabajo.
+            Somos un grupo humano profesional y capacitado que contempla necesidades de usted y su familia en los momentos difíciles con EXPERIENCIA, COMPROMISO Y PROFESIONALISMO 
           </p>
         </div>
       </section>
       <section>
         <div class="wrap">
-          <h2>Experiencia, Compromiso y Profesionalismo</h2>
-          <p>
-            Apostando a la capacitación permanente con la mirada puesta en la
-            excelencia.
-          </p>
+          <h3 align="center"  >APOSTAMOS A LA CAPACITACIÓN  PERMANENTE CON LA MIRADA PUESTA EN LA EXCELENCIA</h3>
+          <img style="display: block; margin: 0 auto;" src="../assets/img/paginaPrincipal/_DSC6831.jpg"  width="800" height="800" alt="Imagen de salas varias" />
         </div>
+        
       </section>
+      <section>
+    <div class="wrap">
+
+        <h3 style="text-align: center;">NUESTRAS OFICINAS</h3>
+
+        <div class="oficinas">
+            
+            <div class="oficina">
+              <div class="carrusel" data-carrusel="pagina-principal"></div>
+                <p>Rivadavia 944 de San José de la Esquina</p>
+            </div>
+
+            <div class="oficina">
+              <div class="carrusel" data-carrusel="pagina-principal2"></div>
+                <p>Independencia 364 de Corral de Bustos</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
       <section class="soft">
         <div class="wrap">
           <h2>Servicios</h2>
-          <div class="grid three">
-            <a class="card" href="Services/sepeliosPage.html">Sepelios</a
-            ><a class="card" href="Services/velatoriosPage.html">Velatorios</a
-            ><a class="card" href="Services/trasladosPage.html">Traslados</a
-            ><a class="card" href="Services/serviciosSocialesPage.html"
-              >Servicios Sociales</a
-            ><a class="card" href="Services/ambulanciasPage.html">Ambulancias</a
-            ><a class="card" href="Services/ortopediaPage.html">Ortopedia</a
-            ><a class="card" href="Services/crematorioPage.html">Crematorio</a
-            ><a class="card" href="Services/arteFunerarioPage.html"
-              >Arte Funerario</a
-            ><a class="card" href="Services/audiologiaPage.html"
-              >Soluciones Audiológicas</a
-            >
+          <div class="servicios-mapa">
+            <svg class="mapa-flechas" viewBox="0 0 1000 700" aria-hidden="true">
+              <defs>
+                <marker id="punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M0 0 L10 5 L0 10 z" />
+                </marker>
+              </defs>
+              <path d="M500 200 Q511 168 500 137" />
+              <path d="M617 256 Q667 254 704 220" />
+              <path d="M646 383 Q689 405 736 394" />
+              <path d="M565 485 Q581 523 617 542" />
+              <path d="M435 485 Q419 523 383 542" />
+              <path d="M354 383 Q311 405 264 394" />
+              <path d="M383 256 Q333 254 296 220" />
+            </svg>
+            <div class="mapa-logo"><img src="../assets/img/logo.jpeg" alt="Grupo Simioni" /></div>
+            <a class="ovalo" style="left:50%;top:12.1%" href="Services/sepeliosPage.html">Sepelios</a>
+            <a class="ovalo" style="left:78.9%;top:26.4%" href="Services/serviciosSocialesPage.html">Servicios Sociales</a>
+            <a class="ovalo" style="left:86.1%;top:58.4%" href="Services/ambulanciasPage.html">Ambulancias</a>
+            <a class="ovalo" style="left:66.1%;top:84.1%" href="Services/ortopediaPage.html">Ortopedia<small>Préstamo/Alquiler Ventas</small></a>
+            <a class="ovalo" style="left:33.9%;top:84.1%" href="Services/crematorioPage.html">Crematorio<small>De la Cruz Alta</small></a>
+            <a class="ovalo" style="left:13.9%;top:58.4%" href="Services/arteFunerarioPage.html">Arte Funerario</a>
+            <a class="ovalo" style="left:21.1%;top:26.4%" href="Services/audiologiaPage.html">Soluciones Audiológicas</a>
           </div>
         </div>
       </section>
     </main>
     <footer class="site-footer"><div class="wrap">Grupo Simioni</div></footer>
     <script src="../js/main.js"></script>
+    <script src="../js/slider.js"></script>
   </body>
 </html>
