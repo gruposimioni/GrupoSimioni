@@ -27,15 +27,30 @@
     font-size: clamp(2rem, 4vw, 3.2rem)
 }
 
-.subtitulo-link {
-    border-bottom: 2px solid transparent;
-    transition: color .2s, border-color .2s
+.subtitulo-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 22px
 }
 
-.subtitulo-link:hover,
-.subtitulo-link:focus-visible {
-    color: var(--lila-claro);
-    border-color: var(--lila-claro)
+.subtitulo-btn {
+    display: inline-block;
+    padding: 10px 28px;
+    border: 2px solid var(--blanco);
+    border-radius: 999px;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background .2s, color .2s, transform .2s
+}
+
+.subtitulo-btn:hover,
+.subtitulo-btn:focus-visible {
+    background: var(--blanco);
+    color: var(--indigo);
+    transform: translateY(-2px)
 }
 
 /* Mapa de Argentina semitransparente detrás del contenido (Traslados) */
