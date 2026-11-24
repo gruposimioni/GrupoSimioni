@@ -63,7 +63,9 @@
 
 .form {
     display: grid;
-    gap: 14px
+    gap: 14px;
+    /* Evita que el formulario adopte la altura de las salas desplegadas. */
+    align-self: start
 }
 
 .form input,
@@ -78,6 +80,7 @@
 
 .form button {
     justify-self: start;
+    align-self: start;
     border: 0;
     background: var(--indigo);
     color: var(--blanco);
@@ -97,12 +100,89 @@
     font-weight: 600
 }
 
+.contacto-localidades h2 {
+    margin-top: 0
+}
+
+.localidades-lista {
+    display: grid;
+    gap: 10px
+}
+
+.localidad-contacto {
+    border: 1px solid var(--linea);
+    border-radius: 6px;
+    background: var(--blanco)
+}
+
+.localidad-contacto summary {
+    padding: 14px 16px;
+    color: var(--indigo);
+    font-weight: 600;
+    cursor: pointer
+}
+
+.localidad-contacto summary::marker {
+    color: var(--lila-claro)
+}
+
+.localidad-detalle {
+    padding: 0 16px 12px
+}
+
+.localidad-detalle p {
+    margin: 8px 0
+}
+
+.localidad-detalle a {
+    color: var(--indigo)
+}
+
+.localidad-detalle a:hover,
+.localidad-detalle a:focus-visible {
+    color: var(--malva)
+}
+
 /* Contenedor Grid general para posicionar las tarjetas de forma simétrica */
 .wrap.two.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
     padding: 16px;
+}
+
+.wrap.two.grid.historia-grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    align-items: start;
+}
+
+.historia-texto p:first-child {
+    margin-top: 0;
+}
+
+.historia-imagen {
+    position: sticky;
+    top: 24px;
+    align-self: start;
+}
+
+.historia-imagen img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3602 / 2362;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media(max-width:700px) {
+    .wrap.two.grid.historia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .historia-imagen {
+        position: static;
+        margin-top: 8px;
+    }
 }
 
 /* Construcción del recuadro base de la tarjeta */

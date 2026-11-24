@@ -1,4 +1,26 @@
+const mainScriptUrl = document.currentScript && document.currentScript.src;
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Footer compartido: se renderiza desde un único lugar en todas las páginas.
+  const footer = document.querySelector('.site-footer');
+  if (footer) {
+    const phoneIconUrl = mainScriptUrl
+      ? new URL('../assets/img/icono-celular.png', mainScriptUrl).href
+      : '';
+
+    footer.innerHTML = `
+      <div class="wrap footer-content">
+        <span class="font-gruposimioni">Grupo Simioni</span>
+        <span class="footer-copyright">© ${new Date().getFullYear()} Grupo Simioni. Todos los derechos reservados.</span>
+        <div class="footer-contactos">
+          <img src="${phoneIconUrl}" alt="Teléfono" width="25" height="25">
+          <a href="tel:+543467434083">3467-434083</a>
+          <a href="tel:+543467434105">3467-434105</a>
+        </div>
+      </div>
+    `;
+  }
+
   const whatsappPhone = ' 543467434105'; //falta confirmacion si este es el numero correcto
   const whatsappMessage = 'Hola Grupo Simioni. Quisiera recibir más información sobre sus servicios.';
   const whatsappButton = document.createElement('a');

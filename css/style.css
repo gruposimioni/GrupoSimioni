@@ -35,7 +35,8 @@ h3 {
 }
 
 .font-gruposimioni {
-    font-family: var(--texto-gruposimioni)
+    font-family: var(--texto-gruposimioni);
+    font-size: 24px;
 }
 
 a {
